@@ -37,8 +37,12 @@ class PostgreSQL
     public function query(string $query): PostgreSQLStatement|false
     {
     }
-
-    public function prepare(string $query): PostgreSQLStatement|false
+    // swoole 5.0
+    // public function prepare(string $query): PostgreSQLStatement|false
+    // {
+    // }
+    // swoole 4.8
+    public function prepare(string $name, string $query): PostgreSQLStatement|false
     {
     }
 
@@ -54,7 +58,7 @@ class PostgreSQL
      * 提取结果中所有行作为一个数组
      *
      * @link https://wiki.swoole.com/wiki/page/886.html
-     * @param resource $query
+     * @param PostgreSQLStatement $query
      * @return array
      */
     public function fetchAll($query)
