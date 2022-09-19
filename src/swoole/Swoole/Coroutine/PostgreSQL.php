@@ -49,7 +49,7 @@ class PostgreSQL
     /**
      * @param $prepareStateMent
      * @param $param
-     * @return resource
+     * @return PostgreSQLStatement
     */
     public function execute($prepareStateMent, $param)
     {
