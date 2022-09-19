@@ -75,7 +75,7 @@ class PostgreSQL
      * 根据指定的 result 资源提取一行数据（记录）作为数组返回
      *
      * @link https://wiki.swoole.com/wiki/page/892.html
-     * @param resource $queryResult
+     * @param PostgreSQLStatement $queryResult
      * @param int $row
      * @return array
      */
