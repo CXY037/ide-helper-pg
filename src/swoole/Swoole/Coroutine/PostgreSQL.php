@@ -42,6 +42,47 @@ class PostgreSQL
     {
     }
 
+    /**
+     * @param $prepareStateMent
+     * @param $param
+     * @return resource
+    */
+    public function execute($prepareStateMent, $param)
+    {
+    }
+    /**
+     * 提取结果中所有行作为一个数组
+     *
+     * @link https://wiki.swoole.com/wiki/page/886.html
+     * @param resource $query
+     * @return array
+     */
+    public function fetchAll($query)
+    {
+    }
+
+    /**
+     * 返回受影响的记录数目
+     *
+     * @link https://wiki.swoole.com/wiki/page/887.html
+     * @param resource $queryResult
+     * @return int
+     */
+    public function affectedRows($queryResult)
+    {
+    }
+    /**
+     * 根据指定的 result 资源提取一行数据（记录）作为数组返回
+     *
+     * @link https://wiki.swoole.com/wiki/page/892.html
+     * @param resource $queryResult
+     * @param int $row
+     * @return array
+     */
+    public function fetchRow($queryResult, $row = 0)
+    {
+    }
+
     public function metaData(string $table_name): array|false
     {
     }
