@@ -69,7 +69,7 @@ class PostgreSQL
      * 返回受影响的记录数目
      *
      * @link https://wiki.swoole.com/wiki/page/887.html
-     * @param resource $queryResult
+     * @param PostgreSQLStatement $queryResult
      * @return int
      */
     public function affectedRows($queryResult)
